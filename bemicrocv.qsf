@@ -35,6 +35,24 @@ set_location_assignment PIN_L2  -to sd_d[1]
 set_location_assignment PIN_C1  -to sd_d[2]
 set_location_assignment PIN_C2  -to sd_d[3]
 
+# J1 - partial
+set_location_assignment PIN_T22  -to gpio1
+set_location_assignment PIN_T15  -to gpio2
+set_location_assignment PIN_R22  -to gpio3
+set_location_assignment PIN_R15  -to gpio4
+set_location_assignment PIN_R21  -to gpio5
+set_location_assignment PIN_R16  -to gpio6
+set_location_assignment PIN_P22  -to gpio7
+set_location_assignment PIN_R17  -to gpio8
+
+# J2 - partial
+set_location_assignment PIN_P19  -to exp_present
+set_location_assignment PIN_P16  -to eeprom_sda
+set_location_assignment PIN_P18  -to eg_p60
+set_location_assignment PIN_P17  -to eeprom_scl
+
+
 set_global_assignment -name VERILOG_FILE bemicrocv.v
+set_global_assignment -name VERILOG_FILE rs232tx.v
 set_global_assignment -name SDC_FILE bemicrocv.sdc
 set_global_assignment -name CDF_FILE bemicrocv.cdf
