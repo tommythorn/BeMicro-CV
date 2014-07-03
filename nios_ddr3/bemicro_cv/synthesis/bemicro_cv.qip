@@ -1,0 +1,275 @@
+set_global_assignment -entity "bemicro_cv" -library "bemicro_cv" -name IP_TOOL_NAME "Qsys"
+set_global_assignment -entity "bemicro_cv" -library "bemicro_cv" -name IP_TOOL_VERSION "13.0sp1"
+set_global_assignment -entity "bemicro_cv" -library "bemicro_cv" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -library "bemicro_cv" -name SOPCINFO_FILE [file join $::quartus(qip_path) "../../bemicro_cv.sopcinfo"]
+set_instance_assignment -entity "bemicro_cv" -library "bemicro_cv" -name SLD_INFO "QSYS_NAME bemicro_cv HAS_SOPCINFO 1 GENERATION_ID 1385328788"
+set_global_assignment -library "bemicro_cv" -name MISC_FILE [file join $::quartus(qip_path) "../../bemicro_cv.cmp"]
+set_global_assignment -name SYNTHESIS_ONLY_QIP ON
+set_global_assignment -library "bemicro_cv" -name MISC_FILE [file join $::quartus(qip_path) "../../bemicro_cv.qsys"]
+
+set_global_assignment -library "bemicro_cv" -name VHDL_FILE [file join $::quartus(qip_path) "bemicro_cv.vhd"]
+set_global_assignment -library "bemicro_cv" -name VHDL_FILE [file join $::quartus(qip_path) "bemicro_cv_nios_cpu_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo.vhd"]
+set_global_assignment -library "bemicro_cv" -name VHDL_FILE [file join $::quartus(qip_path) "bemicro_cv_sysid_control_slave_translator_avalon_universal_slave_0_agent_rsp_fifo.vhd"]
+set_global_assignment -library "bemicro_cv" -name VHDL_FILE [file join $::quartus(qip_path) "bemicro_cv_nios_cpu_jtag_debug_module_translator_avalon_universal_slave_0_agent.vhd"]
+set_global_assignment -library "bemicro_cv" -name VHDL_FILE [file join $::quartus(qip_path) "bemicro_cv_ddr3_control_avl_0_translator_avalon_universal_slave_0_agent.vhd"]
+set_global_assignment -library "bemicro_cv" -name VHDL_FILE [file join $::quartus(qip_path) "bemicro_cv_sysid_control_slave_translator_avalon_universal_slave_0_agent.vhd"]
+set_global_assignment -library "bemicro_cv" -name VHDL_FILE [file join $::quartus(qip_path) "bemicro_cv_limiter.vhd"]
+set_global_assignment -library "bemicro_cv" -name VHDL_FILE [file join $::quartus(qip_path) "bemicro_cv_limiter_002.vhd"]
+set_global_assignment -library "bemicro_cv" -name VHDL_FILE [file join $::quartus(qip_path) "bemicro_cv_nios_cpu_instruction_master_translator.vhd"]
+set_global_assignment -library "bemicro_cv" -name VHDL_FILE [file join $::quartus(qip_path) "bemicro_cv_nios_cpu_data_master_translator.vhd"]
+set_global_assignment -library "bemicro_cv" -name VHDL_FILE [file join $::quartus(qip_path) "bemicro_cv_mm_bridge_0_m0_translator.vhd"]
+set_global_assignment -library "bemicro_cv" -name VHDL_FILE [file join $::quartus(qip_path) "bemicro_cv_nios_cpu_jtag_debug_module_translator.vhd"]
+set_global_assignment -library "bemicro_cv" -name VHDL_FILE [file join $::quartus(qip_path) "bemicro_cv_onchip_mem_s1_translator.vhd"]
+set_global_assignment -library "bemicro_cv" -name VHDL_FILE [file join $::quartus(qip_path) "bemicro_cv_ddr3_control_avl_0_translator.vhd"]
+set_global_assignment -library "bemicro_cv" -name VHDL_FILE [file join $::quartus(qip_path) "bemicro_cv_mm_bridge_0_s0_translator.vhd"]
+set_global_assignment -library "bemicro_cv" -name VHDL_FILE [file join $::quartus(qip_path) "bemicro_cv_sysid_control_slave_translator.vhd"]
+set_global_assignment -library "bemicro_cv" -name VHDL_FILE [file join $::quartus(qip_path) "bemicro_cv_jtag_uart_avalon_jtag_slave_translator.vhd"]
+set_global_assignment -library "bemicro_cv" -name VHDL_FILE [file join $::quartus(qip_path) "bemicro_cv_led_s1_translator.vhd"]
+set_global_assignment -library "bemicro_cv" -name VHDL_FILE [file join $::quartus(qip_path) "bemicro_cv_pb_sw_s1_translator.vhd"]
+set_global_assignment -library "bemicro_cv" -name VHDL_FILE [file join $::quartus(qip_path) "bemicro_cv_sys_clk_timer_s1_translator.vhd"]
+set_global_assignment -library "bemicro_cv" -name VHDL_FILE [file join $::quartus(qip_path) "bemicro_cv_rst_controller.vhd"]
+set_global_assignment -library "bemicro_cv" -name VHDL_FILE [file join $::quartus(qip_path) "bemicro_cv_rst_controller_001.vhd"]
+set_global_assignment -library "bemicro_cv" -name VHDL_FILE [file join $::quartus(qip_path) "bemicro_cv_rst_controller_002.vhd"]
+set_global_assignment -library "bemicro_cv" -name VHDL_FILE [file join $::quartus(qip_path) "bemicro_cv_nios_cpu_instruction_master_translator_avalon_universal_master_0_agent.vhd"]
+set_global_assignment -library "bemicro_cv" -name VHDL_FILE [file join $::quartus(qip_path) "bemicro_cv_mm_bridge_0_m0_translator_avalon_universal_master_0_agent.vhd"]
+set_global_assignment -library "bemicro_cv" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/bemicro_cv_irq_mapper.sv"]
+set_global_assignment -library "bemicro_cv" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_arbitrator.sv"]
+set_global_assignment -library "bemicro_cv" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/bemicro_cv_rsp_xbar_mux_002.sv"]
+set_global_assignment -library "bemicro_cv" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/bemicro_cv_rsp_xbar_demux_004.sv"]
+set_global_assignment -library "bemicro_cv" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/bemicro_cv_cmd_xbar_demux_002.sv"]
+set_global_assignment -library "bemicro_cv" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/bemicro_cv_rsp_xbar_mux_001.sv"]
+set_global_assignment -library "bemicro_cv" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/bemicro_cv_rsp_xbar_mux.sv"]
+set_global_assignment -library "bemicro_cv" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/bemicro_cv_rsp_xbar_demux_003.sv"]
+set_global_assignment -library "bemicro_cv" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/bemicro_cv_rsp_xbar_demux.sv"]
+set_global_assignment -library "bemicro_cv" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/bemicro_cv_cmd_xbar_mux.sv"]
+set_global_assignment -library "bemicro_cv" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/bemicro_cv_cmd_xbar_demux_001.sv"]
+set_global_assignment -library "bemicro_cv" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/bemicro_cv_cmd_xbar_demux.sv"]
+set_global_assignment -library "bemicro_cv" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_reset_controller.v"]
+set_global_assignment -library "bemicro_cv" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_reset_synchronizer.v"]
+set_global_assignment -library "bemicro_cv" -name SDC_FILE [file join $::quartus(qip_path) "submodules/altera_reset_controller.sdc"]
+set_global_assignment -library "bemicro_cv" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_burst_adapter.sv"]
+set_global_assignment -library "bemicro_cv" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_address_alignment.sv"]
+set_global_assignment -library "bemicro_cv" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_traffic_limiter.sv"]
+set_global_assignment -library "bemicro_cv" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_avalon_st_pipeline_base.v"]
+set_global_assignment -library "bemicro_cv" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/bemicro_cv_id_router_004.sv"]
+set_global_assignment -library "bemicro_cv" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/bemicro_cv_addr_router_002.sv"]
+set_global_assignment -library "bemicro_cv" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/bemicro_cv_id_router_003.sv"]
+set_global_assignment -library "bemicro_cv" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/bemicro_cv_id_router.sv"]
+set_global_assignment -library "bemicro_cv" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/bemicro_cv_addr_router_001.sv"]
+set_global_assignment -library "bemicro_cv" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/bemicro_cv_addr_router.sv"]
+set_global_assignment -library "bemicro_cv" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_avalon_sc_fifo.v"]
+set_global_assignment -library "bemicro_cv" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_slave_agent.sv"]
+set_global_assignment -library "bemicro_cv" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_burst_uncompressor.sv"]
+set_global_assignment -library "bemicro_cv" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_master_agent.sv"]
+set_global_assignment -library "bemicro_cv" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_slave_translator.sv"]
+set_global_assignment -library "bemicro_cv" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_master_translator.sv"]
+set_global_assignment -library "bemicro_cv" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_avalon_mm_bridge.v"]
+set_global_assignment -library "bemicro_cv" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/bemicro_cv_syspll.v"]
+set_global_assignment -library "bemicro_cv" -name QIP_FILE [file join $::quartus(qip_path) "submodules/bemicro_cv_syspll.qip"]
+set_global_assignment -library "bemicro_cv" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/bemicro_cv_ddr3_control.v"]
+set_global_assignment -library "bemicro_cv" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_mem_if_dll_cyclonev.sv"]
+set_global_assignment -library "bemicro_cv" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_mem_if_oct_cyclonev.sv"]
+set_global_assignment -library "bemicro_cv" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_mem_if_hard_memory_controller_top_cyclonev.sv"]
+set_global_assignment -library "bemicro_cv" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/bemicro_cv_ddr3_control_s0_software/sequencer.c"]
+set_global_assignment -library "bemicro_cv" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/bemicro_cv_ddr3_control_s0_software/sequencer.h"]
+set_global_assignment -library "bemicro_cv" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/bemicro_cv_ddr3_control_s0_software/sequencer_defines.h"]
+set_global_assignment -library "bemicro_cv" -name TCL_FILE [file join $::quartus(qip_path) "submodules/bemicro_cv_ddr3_control_s0_make_qsys_seq.tcl"]
+set_global_assignment -library "bemicro_cv" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/bemicro_cv_ddr3_control_s0.v"]
+set_global_assignment -library "bemicro_cv" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_mem_if_sequencer_cpu_cv_synth_cpu_inst.v"]
+set_global_assignment -library "bemicro_cv" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_mem_if_sequencer_cpu_cv_synth_cpu_inst_test_bench.v"]
+set_global_assignment -library "bemicro_cv" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_mem_if_sequencer_mem_no_ifdef_params.sv"]
+set_global_assignment -library "bemicro_cv" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_mem_if_sequencer_rst.sv"]
+set_global_assignment -library "bemicro_cv" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_mem_if_simple_avalon_mm_bridge.sv"]
+set_global_assignment -library "bemicro_cv" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/bemicro_cv_ddr3_control_s0_addr_router.sv"]
+set_global_assignment -library "bemicro_cv" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/bemicro_cv_ddr3_control_s0_addr_router_001.sv"]
+set_global_assignment -library "bemicro_cv" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/bemicro_cv_ddr3_control_s0_cmd_xbar_demux.sv"]
+set_global_assignment -library "bemicro_cv" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/bemicro_cv_ddr3_control_s0_cmd_xbar_demux_001.sv"]
+set_global_assignment -library "bemicro_cv" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/bemicro_cv_ddr3_control_s0_cmd_xbar_mux_001.sv"]
+set_global_assignment -library "bemicro_cv" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/bemicro_cv_ddr3_control_s0_id_router.sv"]
+set_global_assignment -library "bemicro_cv" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/bemicro_cv_ddr3_control_s0_id_router_001.sv"]
+set_global_assignment -library "bemicro_cv" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/bemicro_cv_ddr3_control_s0_irq_mapper.sv"]
+set_global_assignment -library "bemicro_cv" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/bemicro_cv_ddr3_control_s0_rsp_xbar_demux_001.sv"]
+set_global_assignment -library "bemicro_cv" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/bemicro_cv_ddr3_control_s0_rsp_xbar_mux.sv"]
+set_global_assignment -library "bemicro_cv" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/sequencer_reg_file.sv"]
+set_global_assignment -library "bemicro_cv" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/sequencer_scc_acv_phase_decode.v"]
+set_global_assignment -library "bemicro_cv" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/sequencer_scc_acv_wrapper.sv"]
+set_global_assignment -library "bemicro_cv" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/sequencer_scc_mgr.sv"]
+set_global_assignment -library "bemicro_cv" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/sequencer_scc_reg_file.v"]
+set_global_assignment -library "bemicro_cv" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/sequencer_scc_siii_phase_decode.v"]
+set_global_assignment -library "bemicro_cv" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/sequencer_scc_siii_wrapper.sv"]
+set_global_assignment -library "bemicro_cv" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/sequencer_scc_sv_phase_decode.v"]
+set_global_assignment -library "bemicro_cv" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/sequencer_scc_sv_wrapper.sv"]
+set_global_assignment -library "bemicro_cv" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/bemicro_cv_ddr3_control_s0_sequencer_mem.hex"]
+set_global_assignment -library "bemicro_cv" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/bemicro_cv_ddr3_control_s0_AC_ROM.hex"]
+set_global_assignment -library "bemicro_cv" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/bemicro_cv_ddr3_control_s0_inst_ROM.hex"]
+set_global_assignment -library "bemicro_cv" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/bemicro_cv_ddr3_control_p0_clock_pair_generator.v"]
+set_global_assignment -library "bemicro_cv" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/bemicro_cv_ddr3_control_p0_acv_hard_addr_cmd_pads.v"]
+set_global_assignment -library "bemicro_cv" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/bemicro_cv_ddr3_control_p0_acv_hard_memphy.v"]
+set_global_assignment -library "bemicro_cv" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/bemicro_cv_ddr3_control_p0_acv_ldc.v"]
+set_global_assignment -library "bemicro_cv" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/bemicro_cv_ddr3_control_p0_acv_hard_io_pads.v"]
+set_global_assignment -library "bemicro_cv" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/bemicro_cv_ddr3_control_p0_generic_ddio.v"]
+set_global_assignment -library "bemicro_cv" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/bemicro_cv_ddr3_control_p0_reset.v"]
+set_global_assignment -library "bemicro_cv" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/bemicro_cv_ddr3_control_p0_reset_sync.v"]
+set_global_assignment -library "bemicro_cv" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/bemicro_cv_ddr3_control_p0_phy_csr.sv"]
+set_global_assignment -library "bemicro_cv" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/bemicro_cv_ddr3_control_p0_iss_probe.v"]
+set_global_assignment -library "bemicro_cv" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/bemicro_cv_ddr3_control_p0.sv"]
+set_global_assignment -library "bemicro_cv" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/bemicro_cv_ddr3_control_p0_altdqdqs.v"]
+set_global_assignment -library "bemicro_cv" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altdq_dqs2_acv_connect_to_hard_phy_cyclonev.sv"]
+set_global_assignment -library "bemicro_cv" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/bemicro_cv_ddr3_control_p0.ppf"]
+set_global_assignment -library "bemicro_cv" -name SDC_FILE [file join $::quartus(qip_path) "submodules/bemicro_cv_ddr3_control_p0.sdc"]
+set_global_assignment -library "bemicro_cv" -name TCL_FILE [file join $::quartus(qip_path) "submodules/bemicro_cv_ddr3_control_p0_timing.tcl"]
+set_global_assignment -library "bemicro_cv" -name TCL_FILE [file join $::quartus(qip_path) "submodules/bemicro_cv_ddr3_control_p0_report_timing.tcl"]
+set_global_assignment -library "bemicro_cv" -name TCL_FILE [file join $::quartus(qip_path) "submodules/bemicro_cv_ddr3_control_p0_report_timing_core.tcl"]
+set_global_assignment -library "bemicro_cv" -name TCL_FILE [file join $::quartus(qip_path) "submodules/bemicro_cv_ddr3_control_p0_pin_map.tcl"]
+set_global_assignment -library "bemicro_cv" -name TCL_FILE [file join $::quartus(qip_path) "submodules/bemicro_cv_ddr3_control_p0_pin_assignments.tcl"]
+set_global_assignment -library "bemicro_cv" -name TCL_FILE [file join $::quartus(qip_path) "submodules/bemicro_cv_ddr3_control_p0_parameters.tcl"]
+set_global_assignment -library "bemicro_cv" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/bemicro_cv_ddr3_control_pll0.sv"]
+set_global_assignment -library "bemicro_cv" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/bemicro_cv_pb_sw.v"]
+set_global_assignment -library "bemicro_cv" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/bemicro_cv_LED.v"]
+set_global_assignment -library "bemicro_cv" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/bemicro_cv_dip_sw.v"]
+set_global_assignment -library "bemicro_cv" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/bemicro_cv_sysid.v"]
+set_global_assignment -library "bemicro_cv" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/bemicro_cv_jtag_uart.v"]
+set_global_assignment -library "bemicro_cv" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/bemicro_cv_sys_clk_timer.v"]
+set_global_assignment -library "bemicro_cv" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/bemicro_cv_onchip_mem.v"]
+set_global_assignment -library "bemicro_cv" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/bemicro_cv_nios_cpu.ocp"]
+set_global_assignment -library "bemicro_cv" -name SDC_FILE [file join $::quartus(qip_path) "submodules/bemicro_cv_nios_cpu.sdc"]
+set_global_assignment -library "bemicro_cv" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/bemicro_cv_nios_cpu.v"]
+set_global_assignment -library "bemicro_cv" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/bemicro_cv_nios_cpu_bht_ram.mif"]
+set_global_assignment -library "bemicro_cv" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/bemicro_cv_nios_cpu_dc_tag_ram.mif"]
+set_global_assignment -library "bemicro_cv" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/bemicro_cv_nios_cpu_ic_tag_ram.mif"]
+set_global_assignment -library "bemicro_cv" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/bemicro_cv_nios_cpu_jtag_debug_module_sysclk.v"]
+set_global_assignment -library "bemicro_cv" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/bemicro_cv_nios_cpu_jtag_debug_module_tck.v"]
+set_global_assignment -library "bemicro_cv" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/bemicro_cv_nios_cpu_jtag_debug_module_wrapper.v"]
+set_global_assignment -library "bemicro_cv" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/bemicro_cv_nios_cpu_mult_cell.v"]
+set_global_assignment -library "bemicro_cv" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/bemicro_cv_nios_cpu_ociram_default_contents.mif"]
+set_global_assignment -library "bemicro_cv" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/bemicro_cv_nios_cpu_oci_test_bench.v"]
+set_global_assignment -library "bemicro_cv" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/bemicro_cv_nios_cpu_rf_ram_a.mif"]
+set_global_assignment -library "bemicro_cv" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/bemicro_cv_nios_cpu_rf_ram_b.mif"]
+set_global_assignment -library "bemicro_cv" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/bemicro_cv_nios_cpu_test_bench.v"]
+
+set_global_assignment -entity "bemicro_cv_irq_mapper" -library "bemicro_cv" -name IP_TOOL_NAME "altera_irq_mapper"
+set_global_assignment -entity "bemicro_cv_irq_mapper" -library "bemicro_cv" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "bemicro_cv_irq_mapper" -library "bemicro_cv" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "bemicro_cv_rsp_xbar_mux_002" -library "bemicro_cv" -name IP_TOOL_NAME "altera_merlin_multiplexer"
+set_global_assignment -entity "bemicro_cv_rsp_xbar_mux_002" -library "bemicro_cv" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "bemicro_cv_rsp_xbar_mux_002" -library "bemicro_cv" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "bemicro_cv_rsp_xbar_demux_004" -library "bemicro_cv" -name IP_TOOL_NAME "altera_merlin_demultiplexer"
+set_global_assignment -entity "bemicro_cv_rsp_xbar_demux_004" -library "bemicro_cv" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "bemicro_cv_rsp_xbar_demux_004" -library "bemicro_cv" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "bemicro_cv_cmd_xbar_demux_002" -library "bemicro_cv" -name IP_TOOL_NAME "altera_merlin_demultiplexer"
+set_global_assignment -entity "bemicro_cv_cmd_xbar_demux_002" -library "bemicro_cv" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "bemicro_cv_cmd_xbar_demux_002" -library "bemicro_cv" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "bemicro_cv_rsp_xbar_mux_001" -library "bemicro_cv" -name IP_TOOL_NAME "altera_merlin_multiplexer"
+set_global_assignment -entity "bemicro_cv_rsp_xbar_mux_001" -library "bemicro_cv" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "bemicro_cv_rsp_xbar_mux_001" -library "bemicro_cv" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "bemicro_cv_rsp_xbar_mux" -library "bemicro_cv" -name IP_TOOL_NAME "altera_merlin_multiplexer"
+set_global_assignment -entity "bemicro_cv_rsp_xbar_mux" -library "bemicro_cv" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "bemicro_cv_rsp_xbar_mux" -library "bemicro_cv" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "bemicro_cv_rsp_xbar_demux_003" -library "bemicro_cv" -name IP_TOOL_NAME "altera_merlin_demultiplexer"
+set_global_assignment -entity "bemicro_cv_rsp_xbar_demux_003" -library "bemicro_cv" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "bemicro_cv_rsp_xbar_demux_003" -library "bemicro_cv" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "bemicro_cv_rsp_xbar_demux" -library "bemicro_cv" -name IP_TOOL_NAME "altera_merlin_demultiplexer"
+set_global_assignment -entity "bemicro_cv_rsp_xbar_demux" -library "bemicro_cv" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "bemicro_cv_rsp_xbar_demux" -library "bemicro_cv" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "bemicro_cv_cmd_xbar_mux" -library "bemicro_cv" -name IP_TOOL_NAME "altera_merlin_multiplexer"
+set_global_assignment -entity "bemicro_cv_cmd_xbar_mux" -library "bemicro_cv" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "bemicro_cv_cmd_xbar_mux" -library "bemicro_cv" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "bemicro_cv_cmd_xbar_demux_001" -library "bemicro_cv" -name IP_TOOL_NAME "altera_merlin_demultiplexer"
+set_global_assignment -entity "bemicro_cv_cmd_xbar_demux_001" -library "bemicro_cv" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "bemicro_cv_cmd_xbar_demux_001" -library "bemicro_cv" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "bemicro_cv_cmd_xbar_demux" -library "bemicro_cv" -name IP_TOOL_NAME "altera_merlin_demultiplexer"
+set_global_assignment -entity "bemicro_cv_cmd_xbar_demux" -library "bemicro_cv" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "bemicro_cv_cmd_xbar_demux" -library "bemicro_cv" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "altera_reset_controller" -library "bemicro_cv" -name IP_TOOL_NAME "altera_reset_controller"
+set_global_assignment -entity "altera_reset_controller" -library "bemicro_cv" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "altera_reset_controller" -library "bemicro_cv" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "altera_merlin_burst_adapter" -library "bemicro_cv" -name IP_TOOL_NAME "altera_merlin_burst_adapter"
+set_global_assignment -entity "altera_merlin_burst_adapter" -library "bemicro_cv" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "altera_merlin_burst_adapter" -library "bemicro_cv" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "altera_merlin_traffic_limiter" -library "bemicro_cv" -name IP_TOOL_NAME "altera_merlin_traffic_limiter"
+set_global_assignment -entity "altera_merlin_traffic_limiter" -library "bemicro_cv" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "altera_merlin_traffic_limiter" -library "bemicro_cv" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "bemicro_cv_id_router_004" -library "bemicro_cv" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "bemicro_cv_id_router_004" -library "bemicro_cv" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "bemicro_cv_id_router_004" -library "bemicro_cv" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "bemicro_cv_addr_router_002" -library "bemicro_cv" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "bemicro_cv_addr_router_002" -library "bemicro_cv" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "bemicro_cv_addr_router_002" -library "bemicro_cv" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "bemicro_cv_id_router_003" -library "bemicro_cv" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "bemicro_cv_id_router_003" -library "bemicro_cv" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "bemicro_cv_id_router_003" -library "bemicro_cv" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "bemicro_cv_id_router" -library "bemicro_cv" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "bemicro_cv_id_router" -library "bemicro_cv" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "bemicro_cv_id_router" -library "bemicro_cv" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "bemicro_cv_addr_router_001" -library "bemicro_cv" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "bemicro_cv_addr_router_001" -library "bemicro_cv" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "bemicro_cv_addr_router_001" -library "bemicro_cv" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "bemicro_cv_addr_router" -library "bemicro_cv" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "bemicro_cv_addr_router" -library "bemicro_cv" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "bemicro_cv_addr_router" -library "bemicro_cv" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "altera_avalon_sc_fifo" -library "bemicro_cv" -name IP_TOOL_NAME "altera_avalon_sc_fifo"
+set_global_assignment -entity "altera_avalon_sc_fifo" -library "bemicro_cv" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "altera_avalon_sc_fifo" -library "bemicro_cv" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "altera_merlin_slave_agent" -library "bemicro_cv" -name IP_TOOL_NAME "altera_merlin_slave_agent"
+set_global_assignment -entity "altera_merlin_slave_agent" -library "bemicro_cv" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "altera_merlin_slave_agent" -library "bemicro_cv" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "altera_merlin_master_agent" -library "bemicro_cv" -name IP_TOOL_NAME "altera_merlin_master_agent"
+set_global_assignment -entity "altera_merlin_master_agent" -library "bemicro_cv" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "altera_merlin_master_agent" -library "bemicro_cv" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "altera_merlin_slave_translator" -library "bemicro_cv" -name IP_TOOL_NAME "altera_merlin_slave_translator"
+set_global_assignment -entity "altera_merlin_slave_translator" -library "bemicro_cv" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "altera_merlin_slave_translator" -library "bemicro_cv" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "altera_merlin_master_translator" -library "bemicro_cv" -name IP_TOOL_NAME "altera_merlin_master_translator"
+set_global_assignment -entity "altera_merlin_master_translator" -library "bemicro_cv" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "altera_merlin_master_translator" -library "bemicro_cv" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "altera_avalon_mm_bridge" -library "bemicro_cv" -name IP_TOOL_NAME "altera_avalon_mm_bridge"
+set_global_assignment -entity "altera_avalon_mm_bridge" -library "bemicro_cv" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "altera_avalon_mm_bridge" -library "bemicro_cv" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "bemicro_cv_syspll" -library "bemicro_cv" -name IP_TOOL_NAME "altera_pll"
+set_global_assignment -entity "bemicro_cv_syspll" -library "bemicro_cv" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "bemicro_cv_syspll" -library "bemicro_cv" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "bemicro_cv_ddr3_control" -library "bemicro_cv" -name IP_TOOL_NAME "altera_mem_if_ddr3_emif"
+set_global_assignment -entity "bemicro_cv_ddr3_control" -library "bemicro_cv" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "bemicro_cv_ddr3_control" -library "bemicro_cv" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "altera_mem_if_dll_cyclonev" -library "bemicro_cv" -name IP_TOOL_NAME "altera_mem_if_dll"
+set_global_assignment -entity "altera_mem_if_dll_cyclonev" -library "bemicro_cv" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "altera_mem_if_dll_cyclonev" -library "bemicro_cv" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "altera_mem_if_oct_cyclonev" -library "bemicro_cv" -name IP_TOOL_NAME "altera_mem_if_oct"
+set_global_assignment -entity "altera_mem_if_oct_cyclonev" -library "bemicro_cv" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "altera_mem_if_oct_cyclonev" -library "bemicro_cv" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "altera_mem_if_hard_memory_controller_top_cyclonev" -library "bemicro_cv" -name IP_TOOL_NAME "altera_mem_if_ddr3_hard_memory_controller"
+set_global_assignment -entity "altera_mem_if_hard_memory_controller_top_cyclonev" -library "bemicro_cv" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "altera_mem_if_hard_memory_controller_top_cyclonev" -library "bemicro_cv" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "bemicro_cv_ddr3_control_s0" -library "bemicro_cv" -name IP_TOOL_NAME "altera_mem_if_ddr3_qseq"
+set_global_assignment -entity "bemicro_cv_ddr3_control_s0" -library "bemicro_cv" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "bemicro_cv_ddr3_control_s0" -library "bemicro_cv" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "bemicro_cv_ddr3_control_p0" -library "bemicro_cv" -name IP_TOOL_NAME "altera_mem_if_ddr3_hard_phy_core"
+set_global_assignment -entity "bemicro_cv_ddr3_control_p0" -library "bemicro_cv" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "bemicro_cv_ddr3_control_p0" -library "bemicro_cv" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "bemicro_cv_ddr3_control_pll0" -library "bemicro_cv" -name IP_TOOL_NAME "altera_mem_if_ddr3_pll"
+set_global_assignment -entity "bemicro_cv_ddr3_control_pll0" -library "bemicro_cv" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "bemicro_cv_ddr3_control_pll0" -library "bemicro_cv" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "bemicro_cv_pb_sw" -library "bemicro_cv" -name IP_TOOL_NAME "altera_avalon_pio"
+set_global_assignment -entity "bemicro_cv_pb_sw" -library "bemicro_cv" -name IP_TOOL_VERSION "13.0.1.99.2"
+set_global_assignment -entity "bemicro_cv_pb_sw" -library "bemicro_cv" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "bemicro_cv_LED" -library "bemicro_cv" -name IP_TOOL_NAME "altera_avalon_pio"
+set_global_assignment -entity "bemicro_cv_LED" -library "bemicro_cv" -name IP_TOOL_VERSION "13.0.1.99.2"
+set_global_assignment -entity "bemicro_cv_LED" -library "bemicro_cv" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "bemicro_cv_dip_sw" -library "bemicro_cv" -name IP_TOOL_NAME "altera_avalon_pio"
+set_global_assignment -entity "bemicro_cv_dip_sw" -library "bemicro_cv" -name IP_TOOL_VERSION "13.0.1.99.2"
+set_global_assignment -entity "bemicro_cv_dip_sw" -library "bemicro_cv" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "bemicro_cv_sysid" -library "bemicro_cv" -name IP_TOOL_NAME "altera_avalon_sysid_qsys"
+set_global_assignment -entity "bemicro_cv_sysid" -library "bemicro_cv" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "bemicro_cv_sysid" -library "bemicro_cv" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "bemicro_cv_jtag_uart" -library "bemicro_cv" -name IP_TOOL_NAME "altera_avalon_jtag_uart"
+set_global_assignment -entity "bemicro_cv_jtag_uart" -library "bemicro_cv" -name IP_TOOL_VERSION "13.0.1.99.2"
+set_global_assignment -entity "bemicro_cv_jtag_uart" -library "bemicro_cv" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "bemicro_cv_sys_clk_timer" -library "bemicro_cv" -name IP_TOOL_NAME "altera_avalon_timer"
+set_global_assignment -entity "bemicro_cv_sys_clk_timer" -library "bemicro_cv" -name IP_TOOL_VERSION "13.0.1.99.2"
+set_global_assignment -entity "bemicro_cv_sys_clk_timer" -library "bemicro_cv" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "bemicro_cv_onchip_mem" -library "bemicro_cv" -name IP_TOOL_NAME "altera_avalon_onchip_memory2"
+set_global_assignment -entity "bemicro_cv_onchip_mem" -library "bemicro_cv" -name IP_TOOL_VERSION "13.0.1.99.2"
+set_global_assignment -entity "bemicro_cv_onchip_mem" -library "bemicro_cv" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "bemicro_cv_nios_cpu" -library "bemicro_cv" -name IP_TOOL_NAME "altera_nios2_qsys"
+set_global_assignment -entity "bemicro_cv_nios_cpu" -library "bemicro_cv" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "bemicro_cv_nios_cpu" -library "bemicro_cv" -name IP_TOOL_ENV "Qsys"

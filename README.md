@@ -1,9 +1,14 @@
 # BeMicro CV "Hello World" #
 
-The BeMicro CV (originally) shipped with no design files.  This is the
-typical first Does-It-Work kind of design which runs a counter on the
-LEDs. Note, the LED pin assignment given in the documentation is wrong
-and corrected in this design.
+The BeMicro CV (originally) shipped with no design files.  We try to
+compensate here with a collection of useful examples.  Note, the LED
+pin assignment given in the documentation is wrong and corrected in
+these designs.
+
+## LEDs and serial communication
+
+The first ```led_and_serial`` is the typical first Does-It-Work kind
+of design which runs a counter on the LEDs.
 
 This also adds a small serial (RS232) input/output engine:
 
@@ -16,6 +21,11 @@ This also adds a small serial (RS232) input/output engine:
 To use connect a USB BUB (or similar), RX to J1-1, TX to J1-2 and
 ensure that it's configured for 3.3 V signaling.
 
-Suggestions and contributions welcome.
 
-Coming soon: use of external DDR SDRAM and a RISC-V processor
+## NIOS II with support for the external DDR3 memory
+
+The second ```nios_ddr3``` comes curtesy of Guy Lemieux
+```<guy.lemieux@gmail.com>``` and illustrates how to instantiate the
+DDR3 controller and a NIOS II example.
+
+Suggestions and contributions welcome.

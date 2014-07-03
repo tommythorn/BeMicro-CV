@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nios2_config version="1.0">
+    <system>
+        <system_info filepath="true">..\bemicro_cv.sopcinfo</system_info>
+        <system_sof filepath="true">..\output_files\bemicro_cv_time_limited.sof</system_sof>
+        <system_jdi filepath="true"/>
+        <cable>USB-Blaster [USB-0]</cable>
+        <processor JTAGHubInstanceID="0">nios_cpu</processor>
+        <elf_section name="text">
+            <memory_device>onchip_mem/s1</memory_device>
+            <memory_start_offset>0</memory_start_offset>
+        </elf_section>
+        <elf_section name="data">
+            <memory_device>onchip_mem/s1</memory_device>
+            <memory_start_offset>0</memory_start_offset>
+        </elf_section>
+        <terminal JTAGHubInstanceID="0">jtag_uart</terminal>
+    </system>
+    <program>
+        <type>C</type>
+        <options>
+            <source_files>
+                <source_file filepath="true">hw.c</source_file>
+            </source_files>
+            <compiler_flags>-g -O1 -ffunction-sections -fverbose-asm -fno-inline</compiler_flags>
+            <emulate_unimpl_instructions>true</emulate_unimpl_instructions>
+            <use_small_c_library>false</use_small_c_library>
+        </options>
+    </program>
+</nios2_config>
