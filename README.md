@@ -12,14 +12,22 @@ of design which runs a counter on the LEDs.
 
 This also adds a small serial (RS232) input/output engine:
 
- * TX is on GPIO 1, that is J1 pin 1
+ * RX is on GPIO 1, that is J1 pin 1
 
- * RX is on GPIO 2, that is J1 pin 2
+ * TX is on GPIO 2, that is J1 pin 2
+
+ * GND is on J1 pin 12 (and 30).
 
  * Speed set to 115200 bps
 
 To use connect a USB BUB (or similar), RX to J1-1, TX to J1-2 and
-ensure that it's configured for 3.3 V signaling.
+ensure that it's configured for 3.3 V signaling.  Attach with a serial
+console (say `screen $TTY 115200`, where `TTY` is
+`/dev/tty.usbserial-A700eIQP` on my Mac and `/dev/ttyUSB0` on
+Linux. If everything is working, input should be echoed back.
+
+This is a silly design, but much more interesting things can be built
+on top of this.
 
 
 ## NIOS II with support for the external DDR3 memory
