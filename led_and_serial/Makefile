@@ -14,11 +14,11 @@ bemicrocv.fit.summary: bemicrocv.map.summary
 	@-grep ^Error bemicrocv.fit.rpt && mv bemicrocv.fit.summary bemicrocv.fit.summary.broken || true
 
 bemicrocv.sta.summary: bemicrocv.fit.summary
-	@echo TIMING ANALYSING
+	@echo TIMING
 	@quartus_sta bemicrocv $(QUIET)
 	@-grep ^Error bemicrocv.sta.rpt && mv bemicrocv.sta.summary bemicrocv.sta.summary.broken || true
 
-bemicrocv.sof: bemicrocv.fit.summary
+bemicrocv.sof: bemicrocv.fit.summary bemicrocv.sta.summary
 	@echo ASSEMBLING
 	@quartus_asm bemicrocv $(QUIET)
 	@-grep ^Error bemicrocv.asm.rpt && rm bemicrocv.sof || true

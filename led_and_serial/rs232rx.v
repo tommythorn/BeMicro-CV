@@ -18,8 +18,11 @@ module rs232rx
 
     // Serial line
     input  wire        serial_in,
-    output reg         valid = 0,
-    output reg   [7:0] q = 0);
+
+    // AXI4-Stream master (note, buffer is only one-deep)
+    output reg   [7:0] tdata = 0,
+    output reg         tvalid = 0,
+    input  wire        tready);
 
    parameter           bps        =     57_600;
    parameter           frequency  = 25_000_000;
@@ -40,11 +43,12 @@ module rs232rx
     * byte is collected.
     *
     *        Start                        Stop
-    * q      ~\__ B0 B1 B2 B3 B4 B5 B6 B7 ~~
+    * in     ~\__ B0 B1 B2 B3 B4 B5 B6 B7 ~~
     * count        8  7  6  5  4  3  2  1
     */
    always @(posedge clock) begin
-      valid <= 0;
+      if (tready)
+        tvalid <= 0;
 
       // Get rid of meta stability.
       {rxd2,rxd} <= {rxd,serial_in};
@@ -53,8 +57,8 @@ module rs232rx
          ttyclk <= ttyclk - 1'd1;
       end else if (count) begin
          if (count == 1) begin
-            q <= {rxd2, shift_in[7:1]};
-            valid <= 1;
+            tdata <= {rxd2, shift_in[7:1]};
+            tvalid <= 1;
          end
 
          count       <= count - 1'd1;

@@ -12,31 +12,39 @@ module bemicrocv
 
    assign        user_led_n = ~cnt;
 
-   wire          tx_busy;
+   wire          tx_tready;
+   wire   [ 7:0] tx_tdata;
+   wire          tx_tvalid;
 
-   wire   [ 7:0] rx_q;
-   wire          rx_valid;
+   wire   [ 7:0] rx_tdata;
+   wire          rx_tvalid;
+   wire          rx_tready;
 
-   rs232tx rs232tx_inst
-      (.clock(clk_50)
-      ,.serial_out(gpio1)
-      ,.d(rx_q + 1)
-      ,.we(rx_valid)
-      ,.busy(rs232tx_busy)
+   rs232tx tx
+      (.clock		(clk_50)
+      ,.serial_out	(gpio1)
+      ,.tdata		(tx_tdata)
+      ,.tvalid		(tx_tvalid)
+      ,.tready		(tx_tready)
       );
    defparam
-     rs232tx_inst.frequency = 50_000_000,
-     rs232tx_inst.bps       =    115_200;
+     tx.frequency	= 50_000_000,
+     tx.bps      	=    115_200;
 
-   rs232rx rs232rx_inst
-      (.clock(clk_50)
-      ,.serial_in(gpio2)
-      ,.q(rx_q)
-      ,.valid(rx_valid)
+   rs232rx rx
+      (.clock		(clk_50)
+      ,.serial_in	(gpio2)
+      ,.tdata		(rx_tdata)
+      ,.tvalid		(rx_tvalid)
+      ,.tready		(rx_tready)
       );
    defparam
-     rs232rx_inst.frequency = 50_000_000,
-     rs232rx_inst.bps       =    115_200;
+     rx.frequency	= 50_000_000,
+     rx.bps      	=    115_200;
+
+
+   assign tx_tdata 	= rx_tdata + 1;
+   assign rx_tvalid	= tx_tvalid;
 
    always @(posedge clk_50)
      // Note, this style of loops are very efficient as uses a single
